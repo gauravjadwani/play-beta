@@ -27,7 +27,7 @@ include 'connection.php';
     $date=$_POST['date'];
     
     $name=$r->hget($email,'name');
-$check=$r->zrange($date.$email,0,-1);var_dump($check);
+$check=$r->zrange($date.$email,0,-1);
 //echo $check;
 
 foreach($check as $c)
